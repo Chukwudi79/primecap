@@ -1,0 +1,1720 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	color: #fff;
+	background: #0a1126;
+	font-size: 14px;
+	line-height: 26px;
+	font-family: 'Muli', sans-serif;
+	padding: 0;
+	margin: 0
+}
+p {
+	text-align: justify;
+	margin: 0 0 20px
+}
+a {
+	color: #fff;
+	outline: none;
+	text-decoration: none
+}
+a:hover, a:active, a:focus {
+	color: #ed9e92;
+	text-decoration: none;
+	outline: none
+}
+img {
+	max-width: 100%
+}
+label {
+	font-weight: 400
+}
+input[type="text"], input[type="password"], input[type="email"] {
+	color: #fff;
+	width: 100%;
+	height: 42px;
+	background: #06132c;
+	border: 1px solid #215a97;
+	padding: 0 15px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+textarea {
+	color: #fff;
+	width: 100%;
+	height: 125px;
+	border: 1px solid #215a97;
+	background: #06132c;
+	padding: 10px;
+	border-radius: 4px;
+	resize: none;
+	font-size: 15px;
+}
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
+	border: 1px solid #17b6db
+}
+input[type="submit"], input[type="button"] {
+	border: none;
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	line-height: 42px;
+	border-radius: 50px;
+	display: inline-block;
+	padding: 0 50px;
+	background: rgb(0,172,209);
+	background: linear-gradient(180deg, rgba(0,172,209,1) 0%, rgba(11,115,186,1) 100%);
+	font-weight: 700;
+}
+input[type="submit"]:hover, input[type="button"]:hover {
+	color: #fff;
+	background: rgb(0,172,209);
+}
+select {
+	color: #fff;
+	font-size: 13px;
+	border: 1px solid #215a97;
+	border-radius: 4px;
+	width: auto;
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background: url(images/select_arrow.png) no-repeat right #06132c;
+	padding: 5px 20px 5px 10px
+}
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+.wrapper {
+	width: 100%;
+	float: left;
+}
+.wrapper, .headerwrap, .investmentwrap, .aboutwrap, .registered, .onlinestatwrap, .footerpayments, .footerwrap, .inside_wrap {
+	width: 100%;
+	float: left
+}
+/* .wrapper {
+} */
+.headerwrap {
+	background: url(images/mainbannerbg.jpg)  top center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.logowrap {
+	background: rgb(5,49,98);
+	background: linear-gradient(0deg, rgba(5,49,98,0.87) 0%, rgba(4,100,99,0.87) 100%);
+	border-radius: 0 0 15px 15px;
+	padding: 20px;
+	width: 100%;
+	float: left;
+	font-size: 12px;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 99;
+	box-shadow: 0 0 5px #0000003d;
+}
+.nav_wrap {
+	float: left;
+}
+.nav_wrap .navbar-collapse {
+	padding: 0;
+	margin: 0 15px 0 0
+}
+.servertime {
+	float: left;
+	padding: 0 0 0 40px;
+	line-height: 32px;
+	font-weight: 600;
+	background: url(images/clock.png) no-repeat left center;
+	margin: 0 15px 0 0;
+}
+.servertime span {
+	color: #15c4e8;
+}
+.headersocial {
+	float: left;
+	margin: 0 15px 0 0;
+}
+.headersocial a {
+	margin: 0 5px 0 0
+}
+.headerloginwrap {
+	float: right;
+}
+.nav > li > a {
+	padding: 0 6px;
+	line-height: 32px;
+	font-weight: 600;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+	text-decoration: none;
+	background-color: #00aed2;
+	color: #fff;
+	border-radius: 4px;
+}
+.nav > li {
+	padding: 0 10px 0 0;
+}
+.headerloginwrap a {
+	background: #0a1734;
+	line-height: 28px;
+	padding: 0 15px;
+	margin: 0 0 0 10px;
+	display: inline-block;
+	border-radius: 4px;
+	font-weight: 600;
+}
+.headerloginwrap a.login {
+	border: 2px solid #00a4ce;
+}
+.headerloginwrap a.register {
+	border: 2px solid #ed9e92;
+}
+.headerloginwrap a.login:hover {
+	background: #00a4ce;
+	color: #fff;
+}
+.headerloginwrap a.register:hover {
+	background: #ed9e92;
+	color: #fff;
+}
+.bannercontent {
+	padding: 60px 0;
+	width: 100%;
+	float: left;
+}
+.logo {
+	padding: 0 0 20px;
+}
+.logohairline {
+	padding: 0 0 30px;
+}
+.bannercontent h2 {
+	margin: 0 0 30px;
+	font-size: 36px;
+	line-height: 46px;
+	color: #ed9e92;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.bannercontent h2 span {
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin: 0;
+	display: block;
+	color: #fff;
+}
+.bannercontent .action {
+	padding: 0 0 40px;
+}
+.bannercontent .action a {
+	background: rgb(15,20,37);
+	background: linear-gradient(0deg, rgba(15,20,37,1) 0%, rgba(11,30,75,1) 100%);
+	border-radius: 4px;
+	line-height: 52px;
+	display: inline-block;
+	margin: 0 10px 0 0;
+	padding: 0 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	box-shadow: 0 0 5px #0000003d;
+}
+.bannercontent .action a.memberlogin {
+	border: 2px solid #00aed2;
+	color: #00aed2;
+}
+.bannercontent .action a.memberlogin:hover {
+	background: #00aed2;
+	color: #fff;
+}
+.bannercontent .action a.openaccount {
+	border: 2px solid #f1a194;
+	color: #f1a194;
+}
+.bannercontent .action a.openaccount:hover {
+	background: #f1a194;
+	color: #fff;
+}
+.daysonline {
+	padding: 0 0 0 44px;
+	color: #00add2;
+	font-size: 24px;
+	font-weight: 300;
+	background: url(images/dayslogo.png) no-repeat left center;
+	line-height: 32px;
+}
+.daysonline span {
+	color: #fff;
+	font-weight: 700;
+}
+.bannerthumb {
+	margin: -80px 0 0 80px;
+	text-align: right;
+}
+.bannerthumb img {
+	max-width: inherit
+}
+.investmentwrap {
+	background: #0a1734;
+	padding: 60px 0;
+	text-align: center;
+	position: relative;
+}
+.investmentwrap::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 360px;
+	background: #070a15;
+	z-index: 1;
+	width: 100%;
+}
+.investmentwrap .container {
+	position: relative;
+	z-index: 9;
+}
+.investmentwrap h2 {
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 0 40px;
+	color: #17b6db;
+}
+.investmentwrap h2 span {
+	color: #fff;
+	font-weight: 300;
+}
+.planwrap {
+	background: url(images/planbg.jpg) no-repeat center top;
+	border-radius: 10px;
+	width: 100%;
+	float: left;
+	padding: 15px;
+	margin: 30px 0 0 0;
+	box-shadow: 0 0 5px #00000073;
+}
+.planbox {
+	width: 16.66%;
+	float: left;
+	padding: 0 5px;
+}
+.planbox .icon {
+	background: rgb(11,30,74);
+	background: linear-gradient(180deg, rgba(11,30,74,1) 0%, rgba(15,20,38,1) 100%);
+	border-radius: 50px;
+	border: 4px solid #00aed2;
+	width: 100px;
+	height: 100px;
+	margin: -40px auto 15px;
+	box-shadow: 0 0 5px #00000073;
+}
+.planpercent {
+	font-size: 48px;
+	font-weight: 800;
+	line-height: 52px;
+}
+.planpercent span {
+	font-size: 36px;
+}
+.planbox .days {
+	color: #ed9e92;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding: 0 0 5px;
+}
+.planbox .minmax {
+	background: #06132c;
+	border-radius: 20px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #3f5a91;
+	font-weight: 500;
+	margin: 5px 0;
+	line-height: 34px;
+	border: 2px solid #055090;
+	width: 100%;
+}
+.vipplanbox {
+	background: rgb(4,99,99);
+	background: linear-gradient(180deg, rgba(4,99,99,1) 0%, rgba(5,49,98,1) 100%);
+	border-radius: 10px;
+	margin-top: 30px;
+	padding: 15px;
+	width: 100%;
+	float: left;
+}
+.vipplanbox .planname {
+	font-size: 24px;
+	font-weight: 800;
+	border-bottom: 2px solid #0c6c72;
+	margin: 0 0 5px;
+	line-height: 35px;
+	position: relative;
+	text-indent: 24px;
+	width: 100%;
+	float: left;
+}
+.vipplanbox .planname::before {
+	content: "";
+	position: absolute;
+	background: url(images/vipplanstar.png) no-repeat center center;
+	width: 24px;
+	height: 24px;
+	top: 3px;
+	left: 110px;
+}
+.vipplanbox .planrate {
+	border-top: 2px solid #0c6c72;
+	width: 100%;
+	float: left;
+	padding: 0 15px;
+	text-align: center
+}
+.vipplanbox .planrate .left {
+	width: 70%;
+	float: left;
+	font-size: 60px;
+	font-weight: 800;
+	line-height: 70px;
+}
+.vipplanbox .planrate .left span {
+	font-size: 48px;
+}
+.vipplanbox .planrate .right {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: left;
+	font-weight: 800;
+	padding: 10px 0 10px 5px;
+	width: 30%;
+	float: left;
+}
+.vipplanbox .range {
+	width: 100%;
+	float: left;
+	background: #06132c;
+	border: 2px solid #215a97;
+	border-radius: 50px;
+	line-height: 44px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #3f5a91;
+	box-shadow: 0 0 5px #00000073;
+}
+.vipplanbox .range span {
+	color: #ed9e92;
+}
+.calculatorbutton {
+	width: 100%;
+	float: left;
+	padding: 25px 0 0 0;
+}
+.calculatorbutton a {
+	background: rgb(15,20,37);
+	background: linear-gradient(0deg, rgba(15,20,37,1) 0%, rgba(11,30,75,1) 100%);
+	border: 3px solid #00aed2;
+	border-radius: 50px;
+	font-size: 18px;
+	text-transform: uppercase;
+	line-height: 58px;
+	display: inline-block;
+	padding: 0 40px;
+	font-weight: 700;
+	box-shadow: 0 0 5px #00000073;
+}
+.calculatorbutton a:hover {
+	color: #00aed2
+}
+.calculatorbutton span {
+	line-height: 47px;
+	display: inline-block;
+	padding: 0 5px 0 0;
+}
+.aboutwrap {
+	padding: 40px 0;
+	float: left;
+	width: 100%;
+	background: url(images/aboutbgtexture.png) no-repeat top left #0e1f43
+}
+/* .aboutwrap .aboutthumb {
+} */
+/* .aboutwrap .abouttexts {
+} */
+.aboutwrap .abouttexts h2 {
+	font-size: 36px;
+	margin: 0 0 20px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.aboutwrap .abouttexts span {
+	font-weight: 800;
+	color: #17b6db;
+}
+/* .aboutwrap .abouttexts p {
+} */
+.aboutwrap .abouttexts a {
+	background: rgb(0,172,209);
+	background: linear-gradient(180deg, rgba(0,172,209,1) 0%, rgba(11,115,186,1) 100%);
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 0 35px;
+	border-radius: 50px;
+	display: inline-block;
+	line-height: 44px;
+	box-shadow: 0 0 5px #00000073;
+}
+.aboutwrap .abouttexts a:hover {
+	color: #fff;
+	background: rgb(0,172,209);
+}
+.registered {
+	background: url(images/companybg.png) no-repeat top right #0a1734;
+	padding: 50px 0;
+}
+.registered .regbox {
+	background: #06415a url(images/companybgtexture.png) no-repeat top center;
+	border-radius: 25px;
+	width: 100%;
+	float: left;
+	box-shadow: 0 0 5px #00000073;
+}
+.registered .regbox .top {
+	padding: 30px;
+	width: 100%;
+	float: left;
+}
+.registered .regbox .top .topleft {
+	width: 30%;
+	float: left
+}
+.registered .regbox .top .topbottom {
+	width: 70%;
+	float: left;
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	font-weight: 300;
+	padding: 25px 0 25px 15px;
+}
+.registered .regbox .top .topbottom strong {
+	font-weight: 800;
+}
+.registered .regbox .bottom {
+	width: 100%;
+	float: left;
+	background: #164966;
+	border-radius: 0 0 25px 25px;
+	padding: 25px;
+	text-align: center;
+}
+.registered .regbox .bottom a {
+	padding: 0 30px 0 20px;
+	margin: 0 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 50px;
+	line-height: 40px;
+	display: inline-block;
+	background: rgb(15,20,37);
+	background: linear-gradient(0deg, rgba(15,20,37,1) 0%, rgba(11,30,75,1) 100%);
+}
+.registered .regbox .bottom a span {
+	float: left;
+	padding: 0 10px 0 0;
+}
+.registered .regbox .bottom a.compinfo {
+	border: 2px solid #f1a194;
+}
+.registered .regbox .bottom a.compinfo:hover {
+	background: #f1a194;
+	color: #fff;
+}
+.registered .regbox .bottom a.viewcert {
+	border: 2px solid #00aed2;
+}
+.registered .regbox .bottom a.viewcert:hover {
+	background: #00aed2;
+	color: #fff;
+}
+.commissionbox {
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+.commissionbox .thumb {
+	padding: 0 0 10px;
+}
+.commissionbox h3 {
+	margin: 0;
+	color: #ed9e92;
+	font-size: 36px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.commissionbox h2 {
+	color: #fff;
+	text-transform: uppercase;
+	margin: 0;
+	font-size: 44px;
+	font-weight: 300;
+	line-height: 44px;
+}
+.onlinestatwrap {
+	padding: 50px 0;
+	background: #0a1d45 url(images/statbg.png) no-repeat top center;
+}
+.onlinestatwrap h2 {
+	text-align: center;
+	margin: 0 0 25px;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: 300;
+}
+.onlinestatwrap h2 span {
+	font-weight: 800;
+	color: #17b6db;
+}
+.onlinestatbox {
+	border-left: 2px solid #3597c2;
+	border-right: 2px solid #d25495;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 2px;
+	-moz-background-size: 100% 2px;
+	background-size: 100% 2px;
+	background-image: -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%), -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -moz-linear-gradient(left, #3597c2 0%, #d25495 100%), -moz-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -o-linear-gradient(left, #3597c2 0%, #d25495 100%), -o-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: linear-gradient(to right, #3597c2 0%, #d25495 100%), linear-gradient(to right, #3597c2 0%, #d25495 100%);
+	width: 100%;
+	float: left;
+	padding: 25px;
+	margin: 10px 0
+}
+.onlinestatbox span {
+	float: left;
+	padding: 0 10px 0 0;
+}
+.onlinestatbox p {
+	font-size: 12px;
+	margin: 0 0 8px;
+	line-height: 12px;
+	text-transform: uppercase;
+}
+.onlinestatbox h3 {
+	font-size: 14px;
+	color: #16a1c6;
+	font-weight: 500;
+	margin: 0
+}
+.lastdepositbox {
+	padding: 10px;
+	width: 100%;
+	float: left;
+	margin: 15px 0 0 0;
+	background: rgb(15,20,37);
+	background: linear-gradient(0deg, rgba(15,20,37,1) 0%, rgba(11,30,75,1) 100%);
+	min-height: 380px;
+}
+.lastdepositbox.left {
+	border: 2px solid #00a4ce;
+}
+.lastdepositbox.right {
+	border: 2px solid #ed9e92;
+}
+.lastdepositbox .head {
+	width: 100%;
+	float: left;
+}
+.lastdepositbox .head h3 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 0;
+	float: left;
+	line-height: 55px;
+	width: 85%;
+	background: url(images/lasttenborder.png) no-repeat bottom left;
+}
+.lastdepositbox .head strong {
+	color: #18a4cb;
+	font-weight: 800;
+}
+.lastdepositbox .head span {
+	float: right;
+	width: 15%;
+	text-align: right;
+}
+.lastdepositbox .infos {
+	width: 100%;
+	float: left;
+}
+.lastdepositbox .infos ul {
+	width: 100%;
+	float: left;
+	border-bottom: 1px dotted #5e72a3;
+	padding: 0 0 3px;
+	margin: 0 0 2px;
+}
+.lastdepositbox .infos ul:last-child {
+	border: none;
+	padding: 0;
+	margin: 0
+}
+.lastdepositbox .infos ul li {
+	float: left;
+	font-size: 13px;
+}
+.lastdepositbox .infos ul li:first-child {
+	width: 40%;
+
+}
+.lastdepositbox .infos ul li:nth-child(2) {
+	width: 40%;
+	text-align: right;
+}
+.lastdepositbox .infos ul li:last-child {
+	float: right;
+	text-align: right;
+	width: 20%
+}
+.lastboxactions {
+	width: 100%;
+	float: left
+}
+.lastboxlink {
+	margin: 8px 0;
+	background: rgb(4,100,99);
+	background: linear-gradient(180deg, rgba(4,100,99,1) 0%, rgba(5,49,98,1) 100%);
+	text-align: center;
+	border-radius: 10px;
+	padding: 10px;
+	box-shadow: 0 0 5px #00000073;
+	width: 100%;
+}
+.lastboxlink a {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.lastboxlink a span {
+	display: block;
+	padding: 0 0 8px;
+}
+.footerpayments {
+	background: #122857;
+	text-align: center;
+	padding: 20px 0;
+}
+.footerpayments span {
+	display: inline-block;
+	padding: 0 35px;
+}
+.footerpayments span h4 {
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+}
+.footerwrap {
+	background: #061437;
+	padding: 40px 0;
+}
+/* .footercopyright {
+} */
+.footercopyright p {
+	text-transform: uppercase;
+	text-align: left;
+	font-size: 12px;
+	margin: 0 0 10px;
+}
+/* .usefullinks {
+} */
+.usefullinks h4, .companyinfos h4 {
+	color: #1ebadf;
+	font-size: 16px;
+	text-transform: uppercase;
+	margin: 12px 0 15px;
+	font-weight: 600;
+}
+/* .usefullinks ul {
+} */
+.usefullinks ul li {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 27px;
+}
+/* .usefullinks ul li a {
+} */
+/* .companyinfos {
+} */
+/* .companyinfos h4 {
+} */
+.companyinfos p {
+	font-size: 13px;
+	text-align: left;
+	padding: 0 0 0 36px;
+	margin: 0 0 15px;
+	text-transform: uppercase;
+}
+.companyinfos p.footeraddress {
+	background: url(images/footerlocation.png) no-repeat left top 5px
+}
+.companyinfos p.footerphone {
+	background: url(images/footerphone.png) no-repeat left top 5px
+}
+.companyinfos p.footeremail {
+	background: url(images/footeremail.png) no-repeat left top 5px
+}
+.footersecurity {
+	background: rgb(4,100,99);
+	background: linear-gradient(180deg, rgba(4,100,99,1) 0%, rgba(5,49,98,1) 100%);
+	border-radius: 4px;
+	margin: 0 0 12px;
+	text-align: center;
+}
+.bouncecoin {
+	animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	-moz-animation: bounce 3s infinite;
+	-o-animation: bounce 3s infinite;
+}
+ @-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {
+-webkit-transform: translateY(0);
+}
+ 40% {
+-webkit-transform: translateY(-25px);
+}
+ 60% {
+-webkit-transform: translateY(-15px);
+}
+}
+ @-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {
+-moz-transform: translateY(0);
+}
+ 40% {
+-moz-transform: translateY(-25px);
+}
+ 60% {
+-moz-transform: translateY(-15px);
+}
+}
+ @-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {
+-o-transform: translateY(0);
+}
+ 40% {
+-o-transform: translateY(-25px);
+}
+ 60% {
+-o-transform: translateY(-15px);
+}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {
+transform: translateY(0);
+}
+ 40% {
+transform: translateY(-25px);
+}
+ 60% {
+transform: translateY(-15px);
+}
+}
+.bannercontent.insideheaders {
+	padding: 30px 0;
+}
+.bannercontent.insideheaders .logo {
+	padding: 0;
+}
+.pagenames {
+	text-align: right;
+	padding: 30px 0;
+	line-height: 80px;
+	font-size: 26px;
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 100%;
+	float: left;
+}
+.profit-container {
+	background: url(images/companybg.png) no-repeat top right #0a1734;
+	padding: 50px 0;
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.features-block h1 {
+	font-size: 36px;
+	margin: 0 0 30px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.features-block h1 span {
+	font-weight: 800;
+	color: #17b6db;
+}
+.feature {
+	border-left: 2px solid #3597c2;
+	border-right: 2px solid #d25495;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 2px;
+	-moz-background-size: 100% 2px;
+	background-size: 100% 2px;
+	background-image: -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%), -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -moz-linear-gradient(left, #3597c2 0%, #d25495 100%), -moz-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -o-linear-gradient(left, #3597c2 0%, #d25495 100%), -o-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: linear-gradient(to right, #3597c2 0%, #d25495 100%), linear-gradient(to right, #3597c2 0%, #d25495 100%);
+	width: 100%;
+	float: left;
+	padding: 15px 15px 5px;
+}
+.feature h2 {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0 0 10px;
+}
+.feature p {
+	text-align: center;
+	margin: 0 0 10px;
+}
+.ourstrategy h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 22px;
+	margin: 0 0 15px;
+}
+.faq {
+    font-size: 14px;
+    border: 0px;
+    background: #03529e url(images/question.png) no-repeat left 10px top 10px;
+    padding: 10px 15px 10px 52px;
+    display: block;
+    margin-top: 5px;
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.faq:hover, .faq:focus, .faq:active {
+	color: #fff;
+	background: #03529f url(images/question.png) no-repeat 10px center;
+}
+.inside_wrap {
+	padding: 50px 0
+}
+.monitor-table {
+	border-top: 1px solid #3597c2;
+	border-left: 1px solid #3597c2;
+	width: 100%;
+	float: left;
+}
+.monitor-table li {
+	width: 25%;
+	float: left;
+	padding: 15px;
+	border-bottom: 1px solid #3597c2;
+	border-right: 1px solid #3597c2;
+	background: rgb(15,20,37);
+	background: linear-gradient(0deg, rgba(15,20,37,1) 0%, rgba(11,30,75,1) 100%);
+}
+.aff-banners.banners .nav-tabs {
+	border: none;
+}
+.aff-banners.banners .nav-tabs li {
+	background: rgb(15,20,37);
+	background: linear-gradient(0deg, rgba(15,20,37,1) 0%, rgba(11,30,75,1) 100%);
+	border-radius: 50px;
+	margin: 0 5px 0 0;
+	text-align: center;
+	padding: 0;
+	border: 2px solid #00aed2;
+}
+.aff-banners.banners .nav-tabs li:hover {
+	border: 2px solid #00aed2;
+}
+.aff-banners.banners .nav-tabs li a {
+	padding: 4px 20px;
+	border: none;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover, .aff-banners.banners .nav-tabs li a:hover {
+	color: #fff;
+	background: rgb(0,172,209);
+	background: linear-gradient(180deg, rgba(0,172,209,1) 0%, rgba(11,115,186,1) 100%);
+	border-radius: 50px;
+	width: 100%;
+	border: none;
+}
+.aff-banners.banners .tab-pane {
+	padding: 15px;
+	text-align: center;
+	border: 2px solid #00a4ce;
+	border-radius: 25px;
+	margin: 25px 0 0 0;
+}
+.refheader {
+	color: #18a4cb;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 20px 0 25px;
+}
+h2.section-title {
+	color: #18a4cb;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 0 25px;
+}
+.alert {
+	text-align: center;
+}
+.alert a {
+    color: #db80ef;
+    font-weight: 700;
+}
+.alert-info {
+    color: white;
+    background: #0965B1;
+    border: 1px solid #0965B1;
+}
+
+.alert-warning {
+    color: #ffffff;
+    background-color: #e8a033;
+    border-color: #e8a033;
+    margin: 10px 0px;
+}
+
+.form-container-support h2 {
+	font-weight: 800;
+	color: #17b6db;
+	margin: 0 0 15px;
+	text-transform: uppercase;
+	font-size: 24px;
+}
+.phone, .address, .emailblock {
+	border-left: 2px solid #3597c2;
+	border-right: 2px solid #d25495;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 2px;
+	-moz-background-size: 100% 2px;
+	background-size: 100% 2px;
+	background-image: -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%), -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -moz-linear-gradient(left, #3597c2 0%, #d25495 100%), -moz-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -o-linear-gradient(left, #3597c2 0%, #d25495 100%), -o-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: linear-gradient(to right, #3597c2 0%, #d25495 100%), linear-gradient(to right, #3597c2 0%, #d25495 100%);
+	width: 100%;
+	float: left;
+	padding: 18px 15px;
+	margin: 0 0 15px;
+}
+.phone h2, .address h2, .emailblock h2 {
+	font-size: 18px;
+	margin: 5px 0 10px;
+	color: #16a1c6;
+	font-weight: 700;
+}
+.phone p, .address p, .emailblock p {
+	margin: 0;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: left;
+}
+.form-container-support {
+	padding: 40px 0 0 0;
+}
+.supportright {
+	padding: 40px 0 0 0;
+	width: 100%;
+	float: left;
+}
+.map {
+	width: 100%;
+	float: left;
+}
+.phone .icon, .address .icon, .emailblock .icon {
+	width: 64px;
+	height: 64px;
+	display: inline-block;
+	/* float: left; */
+	padding: 0 10px 0 0px;
+}
+.rules p {
+    padding: 0 0 5px 0px;
+    margin-bottom: 10px;
+}
+
+.rules h5 {
+	color:#ED9E92;
+	font-size:18px;
+	padding-bottom:15px;
+}
+
+.paidout {
+	width: 100%;
+	float: left;
+}
+.paidout td, .my_accont table td, .my_accont table th {
+	padding: 7px 10px;
+	border-bottom: 1px solid #3597c27d;
+	background: #0e1733;
+	font-size: 13px;
+	text-align: left;
+}
+
+.deposit_confirm {
+	    width: 100%;
+    margin-bottom: 10px;
+}
+
+.paidout td.inheader, .my_accont table td.inheader {
+	border-bottom: 1px solid #ed9e92;
+	color: #ed9e92;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.paidout_top {
+	border-left: 2px solid #3597c2;
+	border-right: 2px solid #d25495;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 2px;
+	-moz-background-size: 100% 2px;
+	background-size: 100% 2px;
+	background-image: -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%), -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -moz-linear-gradient(left, #3597c2 0%, #d25495 100%), -moz-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -o-linear-gradient(left, #3597c2 0%, #d25495 100%), -o-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: linear-gradient(to right, #3597c2 0%, #d25495 100%), linear-gradient(to right, #3597c2 0%, #d25495 100%);
+	width: 100%;
+	float: left;
+	padding: 18px 15px;
+	margin: 0 0 15px;
+}
+.paidout_top table td {
+	display: block;
+	text-align: left;
+	padding: 5px;
+}
+.paidout_top table td select {
+	width: 100%
+}
+.form-container.loginpage {
+	padding: 25px;
+	border: 2px solid #00aed2;
+	width: 100%;
+	float: left;
+	background: rgb(15,20,37);
+	background: linear-gradient(0deg, rgba(15,20,37,1) 0%, rgba(11,30,75,1) 100%);
+}
+.form-container.loginpage table td {
+	padding: 7px;
+}
+.form-container.loginpage table td input {
+	text-align: center
+}
+.existing_user {
+	padding: 15px 0 0 0;
+	text-align: center;
+}
+.existing_user a {
+	color: #ed9e92;
+	text-transform: uppercase;
+}
+.existing_user a:hover {
+	color: #039aca;
+}
+.logo-container.logo_animation {
+	padding: 25px;
+	border: 2px solid #d15394;
+	background: rgb(15,20,37);
+	background: linear-gradient(0deg, rgba(15,20,37,1) 0%, rgba(11,30,75,1) 100%);
+	max-width: 500px;
+	margin: 100px auto;
+}
+.logo-container.logo_animation h3 {
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 30px;
+	margin: 0;
+}
+.lds-spinner {
+	padding: 0 0 25px;
+}
+.accountloginleft {
+	background: rgb(15,20,37);
+	background: linear-gradient(0deg, rgba(15,20,37,1) 0%, rgba(11,30,75,1) 100%);
+	width: 100%;
+	float: left;
+	border-left: 1px solid #3597c2;
+	border-right: 1px solid #d25495;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 1px;
+	-moz-background-size: 100% 1px;
+	background-size: 100% 1px;
+	background-image: -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%), -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -moz-linear-gradient(left, #3597c2 0%, #d25495 100%), -moz-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -o-linear-gradient(left, #3597c2 0%, #d25495 100%), -o-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: linear-gradient(to right, #3597c2 0%, #d25495 100%), linear-gradient(to right, #3597c2 0%, #d25495 100%);
+}
+.acclog1, .acclog2 {
+	padding: 10px;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #00a4ce;
+}
+.acclog1 span, .acclog2 span {
+	float: left;
+	margin: 0 15px 0 0;
+	width: 44px;
+	height: 44px;
+}
+.acclog1 p, .acclog2 p {
+	margin: 5px 0;
+	text-transform: uppercase;
+	line-height: 16px;
+	font-size: 13px;
+}
+.acclog1 h2, .acclog2 h2 {
+	margin: 0;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #ed9e92;
+}
+.membersidebar {
+	padding: 15px;
+	float: left;
+	width: 100%;
+}
+.membersidebar ul li {
+	padding: 6px 0;
+	line-height: 24px;
+	border-bottom: 1px solid #263863;
+}
+.membersidebar ul li:last-child {
+	border: none
+}
+/* .membersidebar ul li a {
+}
+.membersidebar ul li a:hover {
+} */
+.membersidebar ul li span {
+	display: inline-block;
+	padding: 0 10px 0 0;
+}
+.member-right, .account_top, .account_mid {
+	width: 100%;
+	float: left;
+}
+.account_top, .account_mid {
+	padding: 0 0 35px;
+}
+.mem_mid {
+	width: 32%;
+	float: left;
+	text-align: center;
+	background: rgb(4,99,99);
+	background: linear-gradient(180deg, rgba(4,99,99,1) 0%, rgba(5,49,98,1) 100%);
+	border-radius: 10px;
+	margin: 0 2% 0 0;
+	padding: 20px 10px;
+}
+.mem_mid span.icon {
+	width: 64px;
+	height: 64px;
+	padding: 0 0 15px;
+	display: inline-block;
+}
+.mem_mid p {
+	text-align: center;
+	margin: 0 0 15px;
+	text-transform: uppercase;
+	line-height: 36px;
+}
+.mem_mid p span {
+	display: block;
+	font-weight: 700;
+	font-size: 24px;
+}
+.mem_mid.three {
+	margin: 0
+}
+.acctopbox {
+	width: 32%;
+	border-left: 2px solid #3597c2;
+	border-right: 2px solid #d25495;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background-position: 0 0, 0 100%;
+	background-repeat: no-repeat;
+	-webkit-background-size: 100% 2px;
+	-moz-background-size: 100% 2px;
+	background-size: 100% 2px;
+	background-image: -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%), -webkit-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -moz-linear-gradient(left, #3597c2 0%, #d25495 100%), -moz-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: -o-linear-gradient(left, #3597c2 0%, #d25495 100%), -o-linear-gradient(left, #3597c2 0%, #d25495 100%);
+	background-image: linear-gradient(to right, #3597c2 0%, #d25495 100%), linear-gradient(to right, #3597c2 0%, #d25495 100%);
+	float: left;
+	padding: 10px;
+	margin: 0 2% 0 0;
+}
+.acctopbox.three {
+	margin: 0;
+}
+.acctopbox span {
+	width: 64px;
+	height: 64px;
+	padding: 0 10px 0 0;
+	float: left;
+}
+.acctopbox h4 {
+	color: #18a4cb;
+	font-weight: 700;
+}
+.acctopbox p {
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+.mem_mid a {
+	width: 100%;
+	float: left;
+	background: #06132c;
+	border: 2px solid #215a97;
+	border-radius: 50px;
+	line-height: 44px;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #ed9e92;
+}
+.mem_mid a:hover {
+	background: #18a4cb;
+	color: #fff;
+}
+#copyButton {
+    background: #032950 url(images/copy.png) no-repeat left 25px center;
+    border-radius: 50px 0 0 50px;
+    float: left;
+    border: none;
+    line-height: 48px;
+    width: 10%;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 50px;
+    text-indent: -999em;
+}
+#copyTarget {
+	line-height: 40px;
+	height: 50px;
+	border: none;
+	width: 74%;
+	float: left;
+	background: #053262;
+	padding: 0 15px;
+}
+.getban {
+	width: 16%;
+	float: left;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 0 50px 50px 0;
+	background: rgb(0,172,209);
+	background: linear-gradient(180deg, rgba(0,172,209,1) 0%, rgba(11,115,186,1) 100%);
+}
+.getban a, .getban a:hover {
+	color: #fff;
+	display: block;
+}
+#msg {
+	position: absolute;
+	right: 14%;
+	color: #ed7556;
+	top: 15px;
+}
+.refbox {
+	position: relative;
+	width: 100%;
+	float: left;
+	padding: 0 0 25px;
+}
+.account_header {
+	padding: 5px 30px 5px 20px;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 50px;
+	line-height: 40px;
+	display: inline-block;
+	background: rgb(15,20,37);
+	background: linear-gradient(0deg, rgba(15,20,37,1) 0%, rgba(11,30,75,1) 100%);
+	border: 2px solid #f1a194;
+	width: 100%;
+	margin: 0 0 25px;
+}
+.account_header span {
+	color: #f1a194;
+	font-size: 18px;
+	font-weight: 700;
+	float: right;
+}
+.my_accont {
+	width: 100%;
+	float: left;
+	margin: 0 0 25px;
+}
+.account-message {
+    background: #792063;
+    width: 100%;
+    float: left;
+    padding: 15px;
+    border-radius: 6px;
+}
+#myModal2 .modal-header {
+	background: #06132c;
+}
+#myModal2 .modal-body {
+	background: #06132c;
+}
+#myModal2 .close {
+	color: #fff;
+	filter: alpha(opacity=1000);
+	opacity: 1;
+}
+#myModal2 h4.modal-title {
+	margin: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 22px;
+	color: #17b6db;
+}
+#myModal2 .calculateLeft label {
+	width: 100%;
+}
+#myModal2 .calculateLeft select {
+	width: 100%;
+}
+#myModal2 .calculateRight {
+	width: 100%;
+	font-size: 16px;
+	padding: 15px 0 0 0;
+}
+#myModal2 .calculateRight span {
+	color: #ed9e92;
+	font-weight: 700;
+	font-size: 20px;
+}
+#myModal .modal-title {
+	color: #000;
+}
+.account_deposit .planwrap {
+	background: #0b1e49;
+}
+.account_deposit .planbox {
+	width: 33.33%;
+	text-align: center;
+	margin: 0 0 60px;
+}
+.account_deposit .vipplanbox .planrate .left {
+	width: 100%;
+	text-align: center;
+}
+.account_deposit .vipplanbox .planrate .right {
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.account_deposit .vipplanbox .range {
+	font-size: 10px;
+	text-align: center;
+}
+.account_deposit .vipplanbox .planname {
+	text-align: center;
+}
+.account_deposit .vipplanbox .planname::before {
+	left: 0;
+}
+.account_deposit .vipplanbox {
+	text-align: center
+}
+.account_deposit {
+	width: 100%;
+	float: left;
+	padding: 0 0 25px;
+}
+.account_deposit .radio {
+	background-color: #3f5a91;
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 8px 0px;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	width: 200px;
+	border-radius: 30px;
+	margin: 10px auto;
+}
+.account_deposit input[type=radio] {
+	display: none
+}
+.account_deposit input[type=radio]:checked + .radio {
+	background: rgb(0,172,209);
+	background: linear-gradient(180deg, rgba(0,172,209,1) 0%, rgba(11,115,186,1) 100%);
+	color: white;
+}
+.lds-spinner {
+	text-align: center;
+	padding: 0 0 15px
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+.servertime, .nav_wrap .navbar-collapse {
+	font-size: 10px;
+}
+}
+ @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+}
+@media screen and (max-width: 1024px) {
+.logowrap {
+	padding: 15px;
+}
+.nav > li {
+	padding: 0 5px 0 0;
+}
+.headerloginwrap a {
+	padding: 0 12px;
+	margin: 0 0 0 5px;
+}
+.headersocial, .servertime, .nav_wrap .navbar-collapse {
+	margin: 0 5px 0 0;
+}
+.nav > li > a {
+	padding: 0 4px;
+}
+.bannercontent h2 span {
+	font-size: 31px;
+}
+.planpercent {
+	font-size: 40px;
+}
+.planbox .minmax {
+	font-size: 11px;
+}
+.vipplanbox .planname::before {
+	left: 0;
+}
+.vipplanbox .planrate .left {
+	font-size: 40px;
+}
+.vipplanbox .planrate .left span {
+	font-size: 28px;
+}
+.vipplanbox .planrate .right {
+	font-size: 15px;
+}
+.registered .regbox .top .topbottom {
+	font-size: 22px;
+	padding: 20px 0 15px 15px;
+}
+.registered .regbox .bottom {
+	padding: 15px;
+}
+.registered .regbox .bottom a {
+	padding: 0 20px 0 15px;
+}
+.commissionbox h3 {
+	font-size: 28px;
+}
+.commissionbox h2 {
+	font-size: 34px;
+	line-height: 34px;
+}
+.lastboxactions {
+	padding: 15px 0 0 0
+}
+.footerpayments span {
+	padding: 0 15px;
+}
+.acctopbox p {
+	font-size: 11px;
+}
+}
+ @media screen and (max-width: 812px) {
+.member-container {
+	padding-top: 35px
+}
+.bannercontent.insideheaders {
+	text-align: center;
+}
+.pagenames {
+	text-align: center;
+	padding: 0 0 30px;
+	line-height: inherit;
+}
+.feature {
+	margin-bottom: 25px;
+}
+.feature p {
+	min-height: 55px;
+}
+.bannerthumb {
+	display: none
+}
+.planbox {
+	width: 33.33%;
+	margin: 0 0 60px;
+}
+.planwrap {
+	background: url(images/planbg.jpg) no-repeat center top #0b1e49;
+}
+.vipplanbox .planrate .left {
+	width: 100%;
+	line-height: 50px;
+}
+.vipplanbox .planrate .right {
+	padding: 0;
+	width: 100%;
+	text-align: center;
+}
+.aboutwrap .aboutthumb {
+	text-align: center;
+	padding: 0 0 20px;
+}
+.aboutwrap .abouttexts, .aboutwrap .abouttexts p {
+	text-align: center;
+}
+.commissionbox .thumb {
+	padding: 20px 0 0 0;
+}
+.lastboxlink {
+	margin: 8px 1%;
+	width: 48%;
+	float: left;
+}
+.footerpayments span {
+	padding: 0 5px;
+}
+.ourstrategy {
+	padding: 25px 0 0 0;
+	width: 100%;
+	float: left;
+}
+}
+ @media screen and (max-width:767px) {
+.feature p {
+	min-height: inherit;
+}
+.navbar-toggle {
+	float: none;
+	padding: 3px 10px;
+	margin: 0;
+	background-color: transparent;
+	background: url(images/menu.png) no-repeat center center;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	text-indent: -999em;
+}
+.nav > li {
+	padding: 0;
+}
+.nav_wrap {
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 0 0 10px;
+}
+}
+ @media screen and (max-width: 668px) {
+}
+ @media screen and (max-width: 569px) {
+	 .acctopbox,.mem_mid{width:100%; margin:0 0 10px}
+.monitor-table li {
+	width: 100%;
+}
+.form-container-support table td, .paidout td, .my_accont table td {
+	display: block;
+	width: 100%;
+	float: left
+}
+#copyButton{width:100%; background-position: center center; border-radius:10px 10px 0 0;}
+#copyTarget {
+	width: 100%;
+	text-align: center;
+}
+.getban{width:100%; border-radius:50px; margin:10px 0 0 0}
+}
+ @media screen and (max-width: 415px) {
+	 .account_deposit .planbox {
+	width: 100%;
+}
+.aff-banners.banners .nav-tabs li {
+	width: 50%;
+	margin: 2px 0;
+}
+.aboutwrap .abouttexts h2, .investmentwrap h2, .onlinestatwrap h2 {
+	font-size: 30px;
+}
+.planbox {
+	width: 100%;
+}
+}
+ @media screen and (max-width: 376px) {
+.bannercontent .action a {
+	padding: 0 20px;
+}
+.registered .regbox .top .topleft {
+	width: 100%;
+	text-align: center;
+}
+.registered .regbox .top .topbottom {
+	padding: 20px 0 0 0;
+	width: 100%;
+	text-align: center;
+}
+.registered .regbox .bottom a {
+	width: 100%;
+	margin-bottom: 5px
+}
+}
+ @media screen and (max-width: 321px) {
+.bannercontent h2 {
+	font-size: 30px;
+	line-height: 36px;
+}
+.bannercontent h2 span {
+	font-size: 22px;
+}
+.bannercontent .action a {
+	padding: 0 10px;
+	line-height: 42px;
+}
+.calculatorbutton a {
+	padding: 0 20px;
+}
+}
